@@ -1,7 +1,14 @@
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    //   copy your firebase config informations
+    apiKey: "AIzaSyCl-wwW5H6Nd71ZDRRquxSnRjTeR0J-CiM",
+    authDomain: "baper-bank-a4875.firebaseapp.com",
+    databaseURL: "https://baper-bank-a4875-default-rtdb.firebaseio.com",
+    projectId: "baper-bank-a4875",
+    storageBucket: "baper-bank-a4875.appspot.com",
+    messagingSenderId: "732216194815",
+    appId: "1:732216194815:web:1f7a4eef06cd8797083eca",
+    measurementId: "G-C0MQ9565DW"
   };
-  
   // initialize firebase
   firebase.initializeApp(firebaseConfig);
   
@@ -28,7 +35,8 @@ const firebaseConfig = {
     }, 3000);
   
     //   reset the form
-    document.getElementById("contactForm").reset();
+      document.getElementById("contactForm").reset();
+      window.location.href='bank.html'
   }
   
   const saveMessages = (name, emailid, msgContent) => {

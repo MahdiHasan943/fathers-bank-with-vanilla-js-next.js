@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Father-Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Foldit:wght@100;200;300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,700;0,900;1,100;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <h1 class="mt-4 text-5xl text-center font-semibold  ">
+      Let's get some  <span class="text-violet-600">Money!</span>    </h1>
+  
+  
+  </header>
+<main>
+    <section>
+       <div class=" w-full lg:w-9/12 py-10 px-4 mt-12 mx-auto div grid grid-cols-2 sm:grid-cols-3	gap-4">
+        <div class=" rounded-xl bg-cyan-400 p-12	 "><h4
+            class="text-xl md:text-3xl font-medium text-white">
+            Deposite 
+        </h4>
+    <h2 class="text-xl md:text-5xl font-medium text-white" >$ <span id="deposite-total">00</span></h2></div>
+    <div class=" rounded-xl bg-rose-300	 p-12	 "><h4
+        class="text-xl md:text-3xl font-medium text-white">
+        Withdraw
+    </h4>
+<h2 class="text-xl md:text-5xl font-medium text-white">$ <span id="withdraw-total">00</span> </h2></div>
+<div class=" rounded-xl bg-pink-400	 p-12	 "><h4
+    class="text-xl md:text-3xlfont-medium text-white">
+   Balance
+</h4>
+<h2 class="text-xl md:text-5xl font-medium text-white">$ <span id="balance-total">1200</span> </h2></div>
+    
+        
+       </div>
+
+
+
+    </section>
+    <!-- deposite and withdraw -->
+    <section>
+        <div class="grid grid-cols-2 px-4  w-full lg:w-9/12 mx-auto gap-4 ">
+            <div class="bg-fuchsia-400	 rounded-xl 	px-4 py-6	 sm:p-10	 "><h4
+                class="text-xl md:text-5xl font-medium text-white">
+               Please Deposite
+            </h4>
+        <input class="mt-10 w-full sm:w-9/12 block mb-2 p-3 rounded-sm" type="number"  id="deposite-field" placeholder=" $ Amount you want to deposite">
+        <button id="button-deposite" class="  dark:md:hover:bg-rose-400 	 mt-3 bg-indigo-500  block px-8 capitalize	p-3 font-medium  rounded-lg text-white">
+          Deposite
+        </button></div>
+        <div class=" rounded-xl bg-purple-400	px-4 py-6	 sm:p-10	 ">
+            <h4
+            class="text-xl md:text-5xl font-medium text-white">
+           Please Withdraw
+        </h4>
+    <input  class="mt-10 w-full sm:w-9/12 block mb-2 p-3 rounded-sm" type="number"  id="withdraw-field" placeholder=" $ Amount you want to withdraw">
+    <button id="button-withdraw" class="  dark:md:hover:bg-sky-600 	 mt-3 bg-indigo-500  block px-8 capitalize	p-3 font-medium  rounded-lg text-white">
+      Withdraw
+    </button></div>
+            
+        </div>
+    
+    </section>
+</main>
+<script src="deposite.js"></script>
+<script src="withdraw.js"></script>
+
+</body>
+</html>
