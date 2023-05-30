@@ -1,32 +1,13 @@
 document.getElementById('button-deposite').addEventListener('click', () => {
     
-    const inputField = document.getElementById('deposite-field');
-    const newDepositeAmount =parseFloat(inputField.value)
-
-
-
-    const depositeTotal = document.getElementById('deposite-total');
-
-    const preveousDeposite = parseFloat(depositeTotal.innerText);
-    const currentDepositeTotal = preveousDeposite + newDepositeAmount;
-
-    depositeTotal.innerText =currentDepositeTotal;
-
-   
-    inputField.value = ''
-    
-
-   // Withdraw 
-    
-
-
-
+   // input value 
+     const newDepositeAmount = inputValue('deposite-field')
+  
+     //depositeTotal
+     TextValue('deposite-total',newDepositeAmount)
 
     // balanceTotal 
-    const balanceTotal = document.getElementById('balance-total');
-    const preveousBalance = parseFloat(balanceTotal.innerText);
-    const currentBalance = preveousBalance + newDepositeAmount;
-    balanceTotal.innerText = currentBalance;
+    TextValue('balance-total',newDepositeAmount)
 
 
 
